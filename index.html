@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login System</title>
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="container vh-100 d-flex align-items-center justify-content-center ">
+    <section class="signup d-flex flex-column align-items-center justify-content-around col-12 col-lg-8 h-75 m-auto rounded-5 bg-opacity-75 d-none">
+        <div class="container">
+         <div class="ineer p-5 text-center">
+             <h1>SMART LOGIN SYSTEM</h1>
+             <div class="group">
+                 <div class="my-3">
+                     <input type="text" class="form-control" id="username" placeholder="Enter Your Name">
+                     <p class="text-danger p-2 mb-0 pb-0 fw-bold d-none">
+                        <i class="fa-solid fa-circle-exclamation"></i> Error
+                      </p>
+                     <input type="email" class="form-control mt-3" id="email" placeholder="Enter Your Email">
+                     <p class="email-error text-danger p-2 mb-0 pb-0 fw-bold d-none">
+                        <i class="fa-solid fa-circle-exclamation"></i> Error
+                      </p>
+                     <input type="password" class="form-control mt-3" id="pass" placeholder="Enter Your password">
+                     <p class="text-danger p-2 mb-0 pb-0 fw-bold d-none">
+                        <i class="fa-solid fa-circle-exclamation"></i>Error
+                      </p>
+                      <p class="fw-bold text-success fs-5 d-none"> Successfully</p>
+                     <button type="submit"  class="btn btn-dark mt-4 mb-3 w-100" id="btnSignup">Sign Up</button>
+                     <p class="text-white">Don’t have an account? <a class="text-white sign-in" aria-current="page">Sign In</a></p>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </section>
+    <section class="login d-flex flex-column align-items-center justify-content-evenly col-12 col-lg-8 h-75 m-auto rounded-5 bg-opacity-75 d-block">
+        <div class="container">
+         <div class="ineer p-5 text-center">
+             <h1>SMART LOGIN SYSTEM</h1>
+             <div class="group">
+                 <div class="my-3">
+                     <input type="email" class="form-control text-white" id="loginEmail" placeholder="Enter Your Email">
+                     <p class="text-danger p-2 mb-0 pb-0 d-none fw-bold">
+                        <i class="fa-solid fa-circle-exclamation"></i> Error
+                    </p>   
+                     <input type="password" class="form-control mt-3" id="loginPass" placeholder="Enter Your password">
+                     <p class="text-danger p-2 mb-0 pb-0 d-none fw-bold">
+                        <i class="fa-solid fa-circle-exclamation"></i> Error
+                      </p>
+                     <button type="submit" class="btn btn-dark mt-4 mb-3 w-100" id="btnLogin">Login</button>
+                     <p class="text-white">Don’t have an account? <a class="text-white sign-up">Sign Up</a></p>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </section>
+     <div class="home fs-4 d-none position-relative">
+        <nav class="navbar navbar-expand-lg fixed-top d-flex justify-content-between px-5 py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white f-20" href="#">SMART LOGIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-secondary f-20" id="btnOut">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class=" fs-4 rounded-5">
+            <h2 class="p-5 fs-1 text-center text-white fw-bold text-uppercase">
+                Welcome
+                <span id="spanName" class="d-block p-2 mt-2 text-capitalize">UserName</span>
+              </h2> 
+         </section>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

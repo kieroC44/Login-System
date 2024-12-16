@@ -1,0 +1,66 @@
+.sign-up, .sign-in{
+    cursor: pointer;
+}
+.h-80{
+    height: 80px;
+} 
+body{
+    background-color:  #000;
+    font-family: "Titillium Web", sans-serif;
+}
+::selection{
+    color: white;
+    background-color: gray;
+}
+.login-form , .signup-form , .home{
+    box-shadow: -5px 2px 54px -9px hwb(0 95% 4% / 0.955);
+}
+.form-control {
+    color: white;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: .3125rem;
+    transition: border-color .15s ease-in-out;
+    box-shadow: none;
+}
+.form-control:focus {
+    color: white;
+    background-color: #ffffffad;
+    border-color: #e0e4ea;
+    box-shadow: none;
+}
+p a{
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #fff;
+    font-weight: 500;
+}
+p , a , button{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+nav{
+    background-color: dark;
+    box-shadow: -5px 2px 54px -9px #fbf3f3;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+.f-20{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+}
